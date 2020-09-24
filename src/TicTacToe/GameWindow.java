@@ -1,5 +1,4 @@
 package TicTacToe;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -16,7 +15,7 @@ public class GameWindow extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(WINDOW_X, WINDOW_Y, WINDOW_WIDTH, WINDOW_HEIGHT);
         setTitle("TicTacToe");
-
+        setResizable(false);
         battleField = new BattleField(this);
         add(battleField, BorderLayout.CENTER);
 

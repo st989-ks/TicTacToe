@@ -28,6 +28,7 @@ public class SettingWindow extends JFrame {
         this.gameWindow = gameWindow;
         setBounds(WINDOW_X, WINDOW_Y, WINDOW_WIDTH, WINDOW_HEIGHT);
         setTitle("Setting");
+        setResizable(false);
 
         setLayout(new GridLayout(8, 1));
         add(new JLabel("Choose game mode:"));
